@@ -18,6 +18,9 @@ header img {
 
 header div {
     display: flex;
+    max-width: 1120px;
+    height: 5rem;
+    margin: 0 auto;
 }
 
 #nav {
@@ -31,6 +34,7 @@ header div {
     color: black;
     margin-top: 50px;
     margin-right: 50px;
+    margin-top: auto;
 }
 
 header div nav ul li {
@@ -120,7 +124,6 @@ button {
     border-radius: 50%;
     margin: 0 auto 10px auto;
 }
-
 footer {
     display: flex;
     flex-direction: column;
@@ -132,6 +135,8 @@ footer {
 footer div img {
     height: 50px;
     width: 50px;
+    background-color: burlywood;
+}
     margin: 10px;
 }
 
