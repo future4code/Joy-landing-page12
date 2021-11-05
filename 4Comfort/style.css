@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: rgba(0, 255, 255, 0.836);
+    height: 6rem;
+}
+
+header img {
+    width: 200px;
+    height: 200px;
+    margin-top: -50px;
+    margin-left: 50px;
+}
+
+header div {
+    display: flex;
+}
+
+#nav {
+    display: flex;
+    margin-left: auto;
+}
+
+.links {
+    margin-left: 0.8rem;
+    text-decoration: none;
+    color: black;
+    margin-top: 50px;
+    margin-right: 50px;
+}
+
+header div nav ul li {
+    margin-left: .5rem;
+    list-style-type: none;
+}
+
+#home {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #341E77;
+}
+
+#home p {
+    font-size: 50px;
+    text-align: center;
+    color: white;
+    font-style: italic;    
+}
+
+.produto {
+    width: 900px;
+}
+
+#performance {
+    background-color: rgba(0, 255, 255, 0.836);
+    padding: 50px;
+}
+
+#performance h2 {
+    text-align: center;
+    font-size: 80px;
+    padding: 20px;
+}
+#performance p {
+    font-size: 30px;
+    text-align: center;   
+    padding: 20px;    
+}
+
+.produto2 {
+    width: 1000px;
+    border-radius: 50px;
+}
+
+#compra {
+  background-color: #341E77;
+}
+
+#compra h2 p {
+    font-size: 50px;
+    text-align: justify;
+    color: white;
+    font-style: italic;    
+}
+
+button {
+    margin-top: 10px;
+
+}
+
+#quem-somos {
+    background-color: rgba(0, 255, 255, 0.836);
+}
+
+#quem-somos h2 {
+    text-align: center;
+}
+
+#quem-somos p {
+    font-size: 30px;
+    text-align: center;
+    font-style: italic;       
+}
+
+.fabrica {
+    border-radius: 80px;
+}
+
+#nosso-time {
+    background-color: #341E77;
+}
+
+
+.nosso-time {
+    border-radius: 50%;
+    margin: 0 auto 10px auto;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 255, 255, 0.836);
+}
+
+footer div img {
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+}
+
+footer p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 1.5rem;
+}
