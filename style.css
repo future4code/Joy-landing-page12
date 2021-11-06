@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+    color: #000;
+}
+
 header {
     background-color: rgba(0, 255, 255, 0.836);
     height: 6rem;
@@ -23,9 +28,34 @@ header div {
     margin: 0 auto;
 }
 
+@media (max-width: 860px) {
+    header {
+        height: 10rem;
+    }
+    header div {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    header img {
+        width: 120px;
+        height: 120px;
+        margin-top: 5rem;
+        margin-left: 0;
+    }
+    #nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
 #nav {
+    font-size: 1.2rem;
+    font-weight: bold;
     display: flex;
     margin-left: auto;
+    margin-bottom: 1.5rem;
 }
 
 .links {
@@ -37,9 +67,24 @@ header div {
     margin-top: auto;
 }
 
+@media (max-width: 860px) {
+    .links {
+        margin-right: 0;
+    }
+}
+
 header div nav ul li {
     margin-left: .5rem;
     list-style-type: none;
+}
+
+@media (max-width: 860px) {
+    #home p {
+        display: none;
+    }
+    #home img {
+        width: 300px;
+    }
 }
 
 #home {
@@ -57,19 +102,70 @@ header div nav ul li {
     font-style: italic;
 }
 
+@media (max-width: 860px) {
+    #title-performance {
+        display: none;
+    }
+    #performance p {
+        text-align: justify;
+    }
+    #performance p {
+        display: flex;
+        justify-content: center;
+    }
+    #performance p img {
+        margin: 0 auto;
+        width: 300px;
+    }
+    #compra {
+        display: flex;
+        color: #fff;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-self: start;
+    }
+    #compra button {
+        align-self: start;
+    }
+    #compra img {
+        width: 350px;
+    }
+    .fabrica {
+        width: 350px;
+    }
+    #nosso-time {
+        display: flex;
+        color: #fff;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-self: start;
+    }
+    #nosso-time div {
+        display: flex;
+        margin: 0 auto;
+        margin-top: 1rem;
+        padding: 1rem;
+    }
+    #nosso-time div img {
+        width: 110px;
+        height: 110px;
+    }
+}
+
 .produto {
     width: 900px;
 }
 
 #performance {
     background-color: rgba(0, 255, 255, 0.836);
-    padding: 50px;
+    padding: 20px;
 }
 
-#performance h2 {
+#performance h3 {
     text-align: center;
-    font-size: 80px;
-    padding: 20px;
+    font-size: 50px;
 }
 
 #performance p {
@@ -84,6 +180,13 @@ header div nav ul li {
 }
 
 #compra {
+    padding: 1rem 0;
+    color: #fff;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: #341E77;
 }
 
@@ -95,10 +198,23 @@ header div nav ul li {
 }
 
 button {
-    margin-top: 10px;
+    margin: 10px auto;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(0, 255, 255, 0.836);
+    font-weight: bold;
+    font-size: 15px;
+}
+
+button:hover {
+    background-color: rgba(74, 175, 175, 0.836);
 }
 
 #quem-somos {
+    font-size: 2rem;
+    padding: 1rem 0;
     background-color: rgba(0, 255, 255, 0.836);
 }
 
@@ -117,13 +233,32 @@ button {
 }
 
 #nosso-time {
+    display: flex;
+    color: #fff;
+    font-size: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: #341E77;
+}
+
+#nosso-time div {
+    margin-top: 2rem;
+}
+
+#nosso-time div img {
+    padding: 1rem;
 }
 
 .nosso-time {
     border-radius: 50%;
     margin: 0 auto 10px auto;
 }
+
+#nosso-time h2 {
+    margin-top: 1.2rem
+}
+
 footer {
     display: flex;
     flex-direction: column;
@@ -136,7 +271,6 @@ footer div img {
     height: 50px;
     width: 50px;
     background-color: burlywood;
-}
     margin: 10px;
 }
 
