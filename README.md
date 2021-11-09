@@ -34,7 +34,7 @@ Este projeto foi desenvolvido usando as seguintes tecnologias:<br/>
   </tr>
 <table>
 
-Link do Surge: http://4comfort-projeto-joy.surge.sh/
+Link do Surge: [4Comfort](https://4comfort-joy-12.surge.sh/)
 
 
 O que funciona:
