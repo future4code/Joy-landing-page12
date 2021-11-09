@@ -7,6 +7,8 @@
 a {
     text-decoration: none;
     color: #000;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 17px;
 }
 
 header {
@@ -30,7 +32,9 @@ header div {
 
 @media (max-width: 860px) {
     header {
-        height: 10rem;
+        height: 9rem;
+        position: fixed;
+        background-image: linear-gradient( to top, rgba(0, 255, 255, 0.836), #341E77);
     }
     header div {
         flex-direction: column;
@@ -38,15 +42,17 @@ header div {
         justify-content: center;
     }
     header img {
-        width: 120px;
-        height: 120px;
-        margin-top: 5rem;
+        width: 200px;
+        height: 200px;
+        margin-top: 2rem;
         margin-left: 0;
     }
     #nav {
+        max-width: max-content;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+        margin-top: -65px;
     }
 }
 
@@ -83,7 +89,9 @@ header div nav ul li {
         display: none;
     }
     #home img {
-        width: 300px;
+        width: 400px;
+        margin-top: 80px;
+        margin-bottom: -50px;
     }
 }
 
@@ -92,7 +100,7 @@ header div nav ul li {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    background-color: #341E77;
+    background-image: linear-gradient( to bottom, rgba(0, 255, 255, 0.836), #341E77, rgba(0, 255, 255, 0.836));
 }
 
 #home p {
@@ -108,14 +116,29 @@ header div nav ul li {
     }
     #performance p {
         text-align: justify;
+        font-family: cursive;
+        margin-top: -50px;
     }
     #performance p {
         display: flex;
         justify-content: center;
     }
     #performance p img {
-        margin: 0 auto;
-        width: 300px;
+        margin: 50px 0 0;
+        width: 350px;
+    }
+    #compra h2 {
+        text-align: center;
+        color: white;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        padding: 5px;
+    }
+    #compra p {
+        font-size: 18px;
+        text-align: center;
+        color: #000;
+        font-family: cursive;
+        font-style: italic;
     }
     #compra {
         display: flex;
@@ -124,15 +147,19 @@ header div nav ul li {
         align-items: center;
         justify-content: center;
         align-self: start;
+        background-image: linear-gradient( to top, #341E77, rgba(0, 255, 255, 0.836), #341E77);
     }
     #compra button {
         align-self: start;
     }
     #compra img {
         width: 350px;
+        margin-top: -15px;
+        margin-bottom: 20px;
     }
     .fabrica {
         width: 350px;
+        margin-top: -30px;
     }
     #nosso-time {
         display: flex;
@@ -151,6 +178,8 @@ header div nav ul li {
     #nosso-time div img {
         width: 110px;
         height: 110px;
+        margin-top: -30px;
+        margin-bottom: 0px;
     }
 }
 
@@ -159,7 +188,7 @@ header div nav ul li {
 }
 
 #performance {
-    background-color: rgba(0, 255, 255, 0.836);
+    background-image: linear-gradient( to bottom, rgba(0, 255, 255, 0.836), #341E77);
     padding: 20px;
 }
 
@@ -169,9 +198,10 @@ header div nav ul li {
 }
 
 #performance p {
-    font-size: 30px;
+    font-size: 20px;
     text-align: center;
     padding: 20px;
+    font-style: italic;
 }
 
 .produto2 {
@@ -215,17 +245,21 @@ button:hover {
 #quem-somos {
     font-size: 2rem;
     padding: 1rem 0;
-    background-color: rgba(0, 255, 255, 0.836);
+    background-image: linear-gradient( to bottom, #341E77, rgba(0, 255, 255, 0.836), #341E77);
 }
 
 #quem-somos h2 {
     text-align: center;
+    color: #fff;
+    margin-top: -10px;
 }
 
 #quem-somos p {
-    font-size: 30px;
+    font-size: 18px;
     text-align: center;
     font-style: italic;
+    font-family: cursive;
+    padding: 20px 20px 0 20px;
 }
 
 .fabrica {
@@ -239,7 +273,7 @@ button:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #341E77;
+    background-image: linear-gradient( to bottom, #341E77, rgba(0, 255, 255, 0.836));
 }
 
 #nosso-time div {
@@ -247,7 +281,7 @@ button:hover {
 }
 
 #nosso-time div img {
-    padding: 1rem;
+    padding: 10px;
 }
 
 .nosso-time {
@@ -264,18 +298,19 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 255, 255, 0.836);
+    background-image: linear-gradient( to bottom, #341E77, rgba(0, 255, 255, 0.836));
 }
 
 footer div img {
     height: 50px;
     width: 50px;
-    background-color: burlywood;
-    margin: 10px;
+    margin: 20px;
 }
 
 footer p {
-    font-size: 1.5rem;
+    font-size: 18px;
     font-weight: bold;
     margin-top: 1.5rem;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
 }
