@@ -1,0 +1,316 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 17px;
+}
+
+header {
+    background-color: rgba(0, 255, 255, 0.836);
+    height: 6rem;
+}
+
+header img {
+    width: 200px;
+    height: 200px;
+    margin-top: -50px;
+    margin-left: 50px;
+}
+
+header div {
+    display: flex;
+    max-width: 1120px;
+    height: 5rem;
+    margin: 0 auto;
+}
+
+@media (max-width: 860px) {
+    header {
+        height: 9rem;
+        position: fixed;
+        background-image: linear-gradient( to top, rgba(0, 255, 255, 0.836), #341E77);
+    }
+    header div {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    header img {
+        width: 200px;
+        height: 200px;
+        margin-top: 2rem;
+        margin-left: 0;
+    }
+    #nav {
+        max-width: max-content;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: -65px;
+    }
+}
+
+#nav {
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: flex;
+    margin-left: auto;
+    margin-bottom: 1.5rem;
+}
+
+.links {
+    margin-left: 0.8rem;
+    text-decoration: none;
+    color: black;
+    margin-top: 50px;
+    margin-right: 50px;
+    margin-top: auto;
+}
+
+@media (max-width: 860px) {
+    .links {
+        margin-right: 0;
+    }
+}
+
+header div nav ul li {
+    margin-left: .5rem;
+    list-style-type: none;
+}
+
+@media (max-width: 860px) {
+    #home p {
+        display: none;
+    }
+    #home img {
+        width: 400px;
+        margin-top: 80px;
+        margin-bottom: -50px;
+    }
+}
+
+#home {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-image: linear-gradient( to bottom, rgba(0, 255, 255, 0.836), #341E77, rgba(0, 255, 255, 0.836));
+}
+
+#home p {
+    font-size: 50px;
+    text-align: center;
+    color: white;
+    font-style: italic;
+}
+
+@media (max-width: 860px) {
+    #title-performance {
+        display: none;
+    }
+    #performance p {
+        text-align: justify;
+        font-family: cursive;
+        margin-top: -50px;
+    }
+    #performance p {
+        display: flex;
+        justify-content: center;
+    }
+    #performance p img {
+        margin: 50px 0 0;
+        width: 350px;
+    }
+    #compra h2 {
+        text-align: center;
+        color: white;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        padding: 5px;
+    }
+    #compra p {
+        font-size: 18px;
+        text-align: center;
+        color: #000;
+        font-family: cursive;
+        font-style: italic;
+    }
+    #compra {
+        display: flex;
+        color: #fff;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-self: start;
+        background-image: linear-gradient( to top, #341E77, rgba(0, 255, 255, 0.836), #341E77);
+    }
+    #compra button {
+        align-self: start;
+    }
+    #compra img {
+        width: 350px;
+        margin-top: -15px;
+        margin-bottom: 20px;
+    }
+    .fabrica {
+        width: 350px;
+        margin-top: -30px;
+    }
+    #nosso-time {
+        display: flex;
+        color: #fff;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-self: start;
+    }
+    #nosso-time div {
+        display: flex;
+        margin: 0 auto;
+        margin-top: 1rem;
+        padding: 1rem;
+    }
+    #nosso-time div img {
+        width: 110px;
+        height: 110px;
+        margin-top: -30px;
+        margin-bottom: 0px;
+    }
+}
+
+.produto {
+    width: 900px;
+}
+
+#performance {
+    background-image: linear-gradient( to bottom, rgba(0, 255, 255, 0.836), #341E77);
+    padding: 20px;
+}
+
+#performance h3 {
+    text-align: center;
+    font-size: 50px;
+}
+
+#performance p {
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+    font-style: italic;
+}
+
+.produto2 {
+    width: 1000px;
+    border-radius: 50px;
+}
+
+#compra {
+    padding: 1rem 0;
+    color: #fff;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #341E77;
+}
+
+#compra h2 p {
+    font-size: 50px;
+    text-align: justify;
+    color: white;
+    font-style: italic;
+}
+
+button {
+    margin: 10px auto;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(0, 255, 255, 0.836);
+    font-weight: bold;
+    font-size: 15px;
+}
+
+button:hover {
+    background-color: rgba(74, 175, 175, 0.836);
+}
+
+#quem-somos {
+    font-size: 2rem;
+    padding: 1rem 0;
+    background-image: linear-gradient( to bottom, #341E77, rgba(0, 255, 255, 0.836), #341E77);
+}
+
+#quem-somos h2 {
+    text-align: center;
+    color: #fff;
+    margin-top: -10px;
+}
+
+#quem-somos p {
+    font-size: 18px;
+    text-align: center;
+    font-style: italic;
+    font-family: cursive;
+    padding: 20px 20px 0 20px;
+}
+
+.fabrica {
+    border-radius: 80px;
+}
+
+#nosso-time {
+    display: flex;
+    color: #fff;
+    font-size: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient( to bottom, #341E77, rgba(0, 255, 255, 0.836));
+}
+
+#nosso-time div {
+    margin-top: 2rem;
+}
+
+#nosso-time div img {
+    padding: 10px;
+}
+
+.nosso-time {
+    border-radius: 50%;
+    margin: 0 auto 10px auto;
+}
+
+#nosso-time h2 {
+    margin-top: 1.2rem
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient( to bottom, #341E77, rgba(0, 255, 255, 0.836));
+}
+
+footer div img {
+    height: 50px;
+    width: 50px;
+    margin: 20px;
+}
+
+footer p {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 1.5rem;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}
